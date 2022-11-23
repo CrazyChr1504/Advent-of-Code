@@ -15,3 +15,8 @@
 #             for entry_index in range(len(numbers)):
 #                 if int(numbers[entry]) + int(numbers[index]) + int(numbers[entry_index]) == 2020:
 #                     print(int(numbers[entry])*int(numbers[index])*int(numbers[entry_index]))
+#                     break
+#             if int(numbers[entry]) + int(numbers[index]) + int(numbers[entry_index]) == 2020:
+#                 break
+#         if int(numbers[entry]) + int(numbers[index]) + int(numbers[entry_index]) == 2020:
+#             break
