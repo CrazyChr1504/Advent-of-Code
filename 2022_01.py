@@ -16,5 +16,6 @@ if __name__ == "__main__":
             elf_list.append(cal_calc)
             cal_calc = 0
     elf_list.sort()
+    print(elf_list[-1])
     cals = elf_list[-1]+elf_list[-2]+elf_list[-3]
     print(cals)
