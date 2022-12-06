@@ -11,7 +11,7 @@ def part_one():
     same_item = []
     items = []
     count = 0
-    bags = import_file("Advent_03_22")
+    bags = import_file("Advent_03_22.txt")
     for item in bags:
         items.append(list(item))
     for char in items:
@@ -164,7 +164,7 @@ def part_two():
     items = []
     counter = 0
     count = 0
-    bags = import_file("Advent_03_22")
+    bags = import_file("Advent_03_22.txt")
     for item in bags:
         items.append(list(item))
     
