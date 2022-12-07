@@ -16,7 +16,7 @@ def part_one():
           "y":25, "z": 26, "A": 27, "B": 28, "C":29, "D":30, "E":31, "F":32, "G":33, "H":34, "I":35, "J":36,
           "K":37, "L":38, "M":39, "N":40, "O": 41, "P":42, "Q":43, "R":44, "S":45, "T":46, "U": 47, "V":48,
           "W":49, "X":50, "Y":51, "Z":52}
-    bags = import_file("Advent_03_22.txt")
+    bags = import_file("Aoc_Inputs\Advent_03_22.txt")
     for item in bags:
         items.append(list(item))
     for char in items:
@@ -45,7 +45,7 @@ def part_two():
           "y":25, "z": 26, "A": 27, "B": 28, "C":29, "D":30, "E":31, "F":32, "G":33, "H":34, "I":35, "J":36,
           "K":37, "L":38, "M":39, "N":40, "O": 41, "P":42, "Q":43, "R":44, "S":45, "T":46, "U": 47, "V":48,
           "W":49, "X":50, "Y":51, "Z":52}
-    bags = import_file("Advent_03_22.txt")
+    bags = import_file("Aoc_Inputs\Advent_03_22.txt")
     for item in bags:
         items.append(list(item))
     

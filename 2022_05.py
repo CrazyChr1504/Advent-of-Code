@@ -1,4 +1,4 @@
-with open("Advent_05_22.txt") as f:
+with open("Aoc_Inputs\Advent_05_22.txt") as f:
     f_piles, f_ins = f.read().split("\n\n")
 
 f_piles = f_piles.splitlines()

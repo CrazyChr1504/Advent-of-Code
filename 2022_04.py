@@ -1,5 +1,5 @@
 def import_file():
-    with open("Advent_04_22", 'r') as f:
+    with open("Aoc_Inputs\Advent_04_22", 'r') as f:
         return f.readlines()
 
 def part_one():
