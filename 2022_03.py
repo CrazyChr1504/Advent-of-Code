@@ -10,7 +10,12 @@ def import_file(file_name):
 def part_one():
     same_item = []
     items = []
-    count = 0
+    count = []
+    values = {"a": 1, "b": 2, "c":3, "d":4, "e":5, "f":6, "g":7, "h":8, "i":9, "j":10, "k":11, "l":12, "m":13,
+          "n": 14, "o": 15, "p": 16, "q": 17, "r": 18, "s": 19, "t": 20, "u": 21, "v":22, "w": 23, "x": 24,
+          "y":25, "z": 26, "A": 27, "B": 28, "C":29, "D":30, "E":31, "F":32, "G":33, "H":34, "I":35, "J":36,
+          "K":37, "L":38, "M":39, "N":40, "O": 41, "P":42, "Q":43, "R":44, "S":45, "T":46, "U": 47, "V":48,
+          "W":49, "X":50, "Y":51, "Z":52}
     bags = import_file("Advent_03_22.txt")
     for item in bags:
         items.append(list(item))
@@ -24,137 +29,8 @@ def part_one():
                 break
 
     for letter in same_item:
-        if letter.lower() == "a":
-            if letter == "A":
-                count += 27
-            else:
-                count += 1
-        elif letter.lower() == "b":
-            if letter == "B":
-                count += 28
-            else:
-                count += 2
-        elif letter.lower() == "c":
-            if letter == "C":
-                count += 29
-            else:
-                count += 3
-        elif letter.lower() == "d":
-            if letter == "D":
-                count += 30
-            else:
-                count += 4
-        elif letter.lower() == "e":
-            if letter == "E":
-                count += 31
-            else:
-                count += 5
-        elif letter.lower() == "f":
-            if letter == "F":
-                count += 32
-            else:
-                count += 6
-        elif letter.lower() == "g":
-            if letter == "G":
-                count += 33
-            else:
-                count += 7
-        elif letter.lower() == "h":
-            if letter == "H":
-                count += 34
-            else:
-                count += 8
-        elif letter.lower() == "i":
-            if letter == "I":
-                count += 35
-            else:
-                count += 9
-        elif letter.lower() == "j":
-            if letter == "J":
-                count += 36
-            else:
-                count += 10
-        elif letter.lower() == "k":
-            if letter == "K":
-                count += 37
-            else:
-                count += 11
-        elif letter.lower() == "l":
-            if letter == "L":
-                count += 38
-            else:
-                count += 12
-        elif letter.lower() == "m":
-            if letter == "M":
-                count += 39
-            else:
-                count += 13
-        elif letter.lower() == "n":
-            if letter == "N":
-                count += 40
-            else:
-                count += 14
-        elif letter.lower() == "o":
-            if letter == "O":
-                count += 41
-            else:
-                count += 15
-        elif letter.lower() == "p":
-            if letter == "P":
-                count += 42
-            else:
-                count += 16
-        elif letter.lower() == "q":
-            if letter == "Q":
-                count += 43
-            else:
-                count += 17
-        elif letter.lower() == "r":
-            if letter == "R":
-                count += 44
-            else:
-                count += 18
-        elif letter.lower() == "s":
-            if letter == "S":
-                count += 45
-            else:
-                count += 19
-        elif letter.lower() == "t":
-            if letter == "T":
-                count += 46
-            else:
-                count += 20
-        elif letter.lower() == "u":
-            if letter == "U":
-                count += 47
-            else:
-                count += 21
-        elif letter.lower() == "v":
-            if letter == "V":
-                count += 48
-            else:
-                count += 22
-        elif letter.lower() == "w":
-            if letter == "W":
-                count += 49
-            else:
-                count += 23
-        elif letter.lower() == "x":
-            if letter == "X":
-                count += 50
-            else:
-                count += 24
-        elif letter.lower() == "y":
-            if letter == "Y":
-                count += 51
-            else:
-                count += 25
-        elif letter.lower() == "z":
-            if letter == "Z":
-                count += 52
-            else:
-                count += 26
-    print(count)
+        count.append(values[letter])
+    print(sum(count))
 
 def part_two():
     same_item = []
@@ -163,7 +39,12 @@ def part_two():
     list_3 = []
     items = []
     counter = 0
-    count = 0
+    count = []
+    values = {"a": 1, "b": 2, "c":3, "d":4, "e":5, "f":6, "g":7, "h":8, "i":9, "j":10, "k":11, "l":12, "m":13,
+          "n": 14, "o": 15, "p": 16, "q": 17, "r": 18, "s": 19, "t": 20, "u": 21, "v":22, "w": 23, "x": 24,
+          "y":25, "z": 26, "A": 27, "B": 28, "C":29, "D":30, "E":31, "F":32, "G":33, "H":34, "I":35, "J":36,
+          "K":37, "L":38, "M":39, "N":40, "O": 41, "P":42, "Q":43, "R":44, "S":45, "T":46, "U": 47, "V":48,
+          "W":49, "X":50, "Y":51, "Z":52}
     bags = import_file("Advent_03_22.txt")
     for item in bags:
         items.append(list(item))
@@ -181,139 +62,10 @@ def part_two():
                 same_item.append(letter)
                 counter+=1
                 break
-
+    
     for letter in same_item:
-        if letter.lower() == "a":
-            if letter == "A":
-                count += 27
-            else:
-                count += 1
-        elif letter.lower() == "b":
-            if letter == "B":
-                count += 28
-            else:
-                count += 2
-        elif letter.lower() == "c":
-            if letter == "C":
-                count += 29
-            else:
-                count += 3
-        elif letter.lower() == "d":
-            if letter == "D":
-                count += 30
-            else:
-                count += 4
-        elif letter.lower() == "e":
-            if letter == "E":
-                count += 31
-            else:
-                count += 5
-        elif letter.lower() == "f":
-            if letter == "F":
-                count += 32
-            else:
-                count += 6
-        elif letter.lower() == "g":
-            if letter == "G":
-                count += 33
-            else:
-                count += 7
-        elif letter.lower() == "h":
-            if letter == "H":
-                count += 34
-            else:
-                count += 8
-        elif letter.lower() == "i":
-            if letter == "I":
-                count += 35
-            else:
-                count += 9
-        elif letter.lower() == "j":
-            if letter == "J":
-                count += 36
-            else:
-                count += 10
-        elif letter.lower() == "k":
-            if letter == "K":
-                count += 37
-            else:
-                count += 11
-        elif letter.lower() == "l":
-            if letter == "L":
-                count += 38
-            else:
-                count += 12
-        elif letter.lower() == "m":
-            if letter == "M":
-                count += 39
-            else:
-                count += 13
-        elif letter.lower() == "n":
-            if letter == "N":
-                count += 40
-            else:
-                count += 14
-        elif letter.lower() == "o":
-            if letter == "O":
-                count += 41
-            else:
-                count += 15
-        elif letter.lower() == "p":
-            if letter == "P":
-                count += 42
-            else:
-                count += 16
-        elif letter.lower() == "q":
-            if letter == "Q":
-                count += 43
-            else:
-                count += 17
-        elif letter.lower() == "r":
-            if letter == "R":
-                count += 44
-            else:
-                count += 18
-        elif letter.lower() == "s":
-            if letter == "S":
-                count += 45
-            else:
-                count += 19
-        elif letter.lower() == "t":
-            if letter == "T":
-                count += 46
-            else:
-                count += 20
-        elif letter.lower() == "u":
-            if letter == "U":
-                count += 47
-            else:
-                count += 21
-        elif letter.lower() == "v":
-            if letter == "V":
-                count += 48
-            else:
-                count += 22
-        elif letter.lower() == "w":
-            if letter == "W":
-                count += 49
-            else:
-                count += 23
-        elif letter.lower() == "x":
-            if letter == "X":
-                count += 50
-            else:
-                count += 24
-        elif letter.lower() == "y":
-            if letter == "Y":
-                count += 51
-            else:
-                count += 25
-        elif letter.lower() == "z":
-            if letter == "Z":
-                count += 52
-            else:
-                count += 26
-    print(count)
+        count.append(values[letter])
+    print(sum(count))
 
 if __name__ == "__main__":
     part_one()
