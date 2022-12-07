@@ -1,6 +1,6 @@
 cur_dir = []
 dirs = {}
-with open("Advent_07_22.txt","rt") as f:
+with open("Advent_Inputs\Advent_07_22.txt","rt") as f:
   for l in f:
     e = l.strip().split()
     if l.startswith("$ cd"):
