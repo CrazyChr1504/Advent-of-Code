@@ -4,16 +4,13 @@ with open("Aoc_Inputs\Advent_05_22.txt") as f:
 f_piles = f_piles.splitlines()
 f_piles = f_piles[:-1]
 f_ins = f_ins.splitlines()
-
 piles = [[] for i in range(0, len(f_piles) + 1)]
-
 for i in range(-1, (-1 - len(f_piles)), -1):
     for ind, pkg in enumerate(f_piles[i][1::4]):
         if pkg != " ":
             piles[ind].append(pkg)
 
 piles_two = [x.copy() for x in piles]
-
 ins = []
 for i in f_ins:
     _, amount, _, fro, _, to = i.split()
@@ -26,7 +23,6 @@ for i in ins:
         piles[fro - 1].pop()
 
 pkg_one = ""
-
 for i in piles:
     pkg_one += i[-1]
 
