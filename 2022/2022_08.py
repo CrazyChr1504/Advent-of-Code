@@ -1,14 +1,14 @@
 def import_file():
     with open("Aoc_Inputs\Advent_08_22.txt") as f: 
-        return [list(map(int,line)) for line in f.read().splitlines()]
-        
+        return [list(line) for line in f.read().splitlines()]
+
 def part_one():
     grid  = import_file()
     vis = 0
     for r in range(len(grid)):
         for c in range(len(grid[r])):
-            k = grid[r][c]
-            if all(grid[r][x] < k for x in range(c)) or all(grid[r][x] < k for x in range(c+1, len(grid[r]))) or all(grid[x][c] < k for x in range(r)) or all(grid[x][c] < k for x in range(r+1, len(grid))): vis += 1
+            tree = grid[r][c]
+            if all(grid[r][x] < tree for x in range(c)) or all(grid[r][x] < tree for x in range(c+1, len(grid[r]))) or all(grid[x][c] < tree for x in range(r)) or all(grid[x][c] < tree for x in range(r+1, len(grid))): vis += 1
     print(vis)
 
 def part_two():
