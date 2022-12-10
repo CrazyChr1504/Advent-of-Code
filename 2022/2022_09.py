@@ -20,6 +20,6 @@ def rope(length):
                     knots[i][1] += (1 if posy > 0 else 0 if posy == 0 else -1)
             visited.add(tuple(knots[-1]))
     return len(visited)
-
+    
 print(rope(2))
 print(rope(10))
