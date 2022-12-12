@@ -50,6 +50,6 @@ def part_two():
     print(min(bfs(GRID, a, END) for a in A_LIST))
 
 if __name__=="__main__":
-    part_one()
-    part_two()
+    part_one() #My Answer: 447
+    part_two() #My Answer: 446
 
