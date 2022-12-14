@@ -8,7 +8,7 @@ def import_file(file_name):
 if __name__ == "__main__":
     elf_list = []
     cal_calc = 0
-    cal_list = import_file("Aoc_Inputs\Advent_01_22")
+    cal_list = import_file("Aoc_Inputs\Advent_01_22.txt")
     for i in range(len(cal_list)):
         if cal_list[i] != "":
             cal_calc += int(cal_list[i])

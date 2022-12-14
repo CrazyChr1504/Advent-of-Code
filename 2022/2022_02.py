@@ -9,7 +9,7 @@ def import_file(file_name):
 
 def part_one():
     tot_points = []
-    matches = import_file("Aoc_Inputs\Advent_02_22")
+    matches = import_file("Aoc_Inputs\Advent_02_22.txt")
     for match in matches:
         (key, val) = match.split()
         if key == "A":
@@ -37,7 +37,7 @@ def part_one():
 
 def part_two():
     tot_points = []
-    matches = import_file("Aoc_Inputs\Advent_02_22")
+    matches = import_file("Aoc_Inputs\Advent_02_22.txt")
     for match in matches:
         (key, val) = match.split()   
         if key == "A":          
