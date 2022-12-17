@@ -35,7 +35,6 @@ def find_distances(rooms):
 def main():
     rooms = parse_data(input_data.split("\n"))
     distances, key_rooms = find_distances(rooms)
-    print(len(key_rooms), "important rooms found.")
 
     def find_best_total_flow(cur="AA", time=30, seen=set(), targets=key_rooms):
         seen = seen | {cur}
