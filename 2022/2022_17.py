@@ -4,17 +4,17 @@ tower, cache = {-1}, {}
 
 empty = lambda p: p.real in range(7) and p.imag>0 and p not in tower
 
-for n in range(int(1e12)):
+for x in range(int(1e12)):
     h = max(x.imag for x in tower)                        
     p = complex(2, h+4)                                   
-    if n==2022: print(int(h))
+    if x==2022: print(int(h))
 
     key = i, j                                            
     if key in cache:
         N, H = cache[key]
-        d, m = divmod(1e12-n, N-n)
+        d, m = divmod(1e12-x, N-x)
         if not m: print(int(h + (H-h)*d)); break
-    else: cache[key] = n, h
+    else: cache[key] = x, h
 
     rock = rocks[i]                                      
     i = (i+1) % len(rocks)                                
