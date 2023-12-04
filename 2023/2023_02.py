@@ -26,9 +26,9 @@ with open(file_name, 'r') as f:
     for inputs in data:
       inputs = inputs.split(':')[1].split(';')
       rgb = [0, 0, 0]
-      for games in inputs:
-        games = games.strip().split(',')
-        for colors in games:
+      for cubes in inputs:
+        cubes = cubes.strip().split(',')
+        for colors in cubes:
           colors = colors.strip().split(' ')
           if colors[1] == 'green' and int(colors[0]) > rgb[1]:
             rgb[1] = int(colors[0])
