@@ -1,4 +1,4 @@
-file_name = "Programmering\AoC_Inputs\Advent_2023\Advent_01_23.txt"
+file_name = "AoC_Inputs\Advent_2023\Advent_01_23.txt"
 
 with open(file_name, "r") as file:
   input = file.read()
