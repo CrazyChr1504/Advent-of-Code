@@ -1,6 +1,6 @@
 
 file_name = "AoC_Inputs\Advent_2023\Advent_02_23.txt"
-BOUNDS = {  'red': 12, 'green': 13, 'blue': 14,  }
+BOUNDS = { 'red': 12, 'green': 13, 'blue': 14 }
 with open(file_name, 'r') as f:
   data = f.read().split('\n')
 
