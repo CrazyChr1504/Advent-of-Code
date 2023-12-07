@@ -6,7 +6,7 @@ with open(file_name, "r") as f:
   data = [line.strip() for line in f.readlines()]
 
 cards = list('23456789TJQKA')
-hands = [l.split() for l in data if len(l) > 0]
+hands = [line.split() for line in data if len(line) > 0]
 
 def categorize_hand(hand):
   if len(set(hand)) == 1:
