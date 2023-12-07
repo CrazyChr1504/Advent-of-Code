@@ -5,7 +5,7 @@ file_name = "AoC_Inputs\Advent_2023\Advent_07_23.txt"
 with open(file_name, "r") as f:
   data = [line.strip() for line in f.readlines()]
 
-cards = list('AKQJT98765432')[::-1]
+cards = list('23456789TJQKA')
 
 def categorize_hand(hand):
   if len(set(hand)) == 1:
@@ -67,7 +67,7 @@ def second_compare_hands(a,b):
       return -1
   return 0
 
-cards = list('AKQT98765432J')[::-1]
+cards = list('J23456789TQKA')
 
 def second_categorize_hand(hand):
   max_value = None
