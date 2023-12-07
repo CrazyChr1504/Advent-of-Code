@@ -6,6 +6,7 @@ with open(file_name, "r") as f:
   data = [line.strip() for line in f.readlines()]
 
 cards = list('23456789TJQKA')
+hands = [l.split() for l in data if len(l) > 0]
 
 def categorize_hand(hand):
   if len(set(hand)) == 1:
@@ -43,7 +44,6 @@ def compare_hands(a,b):
         return -1
     return 0
 
-hands = [l.split() for l in data if len(l) > 0]
 def Part1():
   hands.sort(key=cmp_to_key(compare_hands))
   sum_wins = 0
@@ -51,6 +51,7 @@ def Part1():
     sum_wins += int(bid)*(i+1)
   print(sum_wins)
 
+cards = list('J23456789TQKA')
 def second_compare_hands(a,b):
   a,_ = a
   b,_ = b
@@ -66,8 +67,6 @@ def second_compare_hands(a,b):
     elif cards.index(ca) < cards.index(cb):
       return -1
   return 0
-
-cards = list('J23456789TQKA')
 
 def second_categorize_hand(hand):
   max_value = None
