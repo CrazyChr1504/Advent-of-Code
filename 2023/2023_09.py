@@ -1,4 +1,5 @@
 file_name = "AoC_Inputs\Advent_2023\Advent_09_23.txt"
+
 with open(file_name, "r") as f:
 	data = f.read()
 	nums = [list(map(int, lines.split())) for lines in data.splitlines()]
